@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Credit from "./components/Credit";
+import creditlist from "./Creditlist";
+
+
+function CreateCredit(info){
+  return <Credit 
+    key={info.key}
+    name={info.name}
+    img={info.img}
+    company={info.company}
+  />
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>
+{creditlist.map(CreateCredit)}
+  </div>
+  
+   
+  
 }
 
 export default App;
