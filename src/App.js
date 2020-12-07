@@ -13,12 +13,11 @@ function CreateCredit(info){
 }
 
 function App() {
-  return <div className="credit-list">
-{creditlist.map(CreateCredit)}
-  </div>
-
-
-
+  return (
+    <div className="credit-list">
+      {creditlist.map(CreateCredit)}
+    </div>
+  )
 }
 
 export default App;
