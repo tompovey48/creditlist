@@ -1,6 +1,6 @@
 import React from "react";
 
-function Credits(props) {
+function Credit(props) {
 
 return (<div className="card darken">
    <img className="credit-img" src={props.img} />
@@ -14,4 +14,4 @@ return (<div className="card darken">
 
 }
 
-export default Credits;
+export default Credit;

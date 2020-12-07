@@ -4,7 +4,7 @@ import creditlist from "./Creditlist";
 
 
 function CreateCredit(info){
-  return <Credit 
+  return <Credit
     key={info.key}
     name={info.name}
     img={info.img}
@@ -13,12 +13,12 @@ function CreateCredit(info){
 }
 
 function App() {
-  return <div>
+  return <div className="credit-list">
 {creditlist.map(CreateCredit)}
   </div>
-  
-   
-  
+
+
+
 }
 
 export default App;
